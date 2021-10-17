@@ -10,75 +10,41 @@
 <h1>
     Хаски-слайдер
 </h1>
-<main>
-    <div class="slider">
-        <a class="prev" onclick="prevSlide()">
-            &#10094;</a>
-
-        <div class="item">
-            <img src="img/1.jpg" alt="slider-1">
-            <div class="slideText">Сильно хочется и можно - иногда одно и то же</div>
+<div class="all">
+    <input checked type="radio" name="respond" id="desktop"/>
+    <article id="slider">
+        <input checked type="radio" name="slider" id="switch1"/>
+        <input type="radio" name="slider" id="switch2"/>
+        <input type="radio" name="slider" id="switch3"/>
+        <input type="radio" name="slider" id="switch4"/>
+        <input type="radio" name="slider" id="switch5"/>
+        <div id="slides">
+            <div id="overflow">
+                <div class="image">
+                    <article><img src="img/1.jpg"/></article>
+                    <article><img src="img/2.jpg"/></article>
+                    <article><img src="img/3.jpg"/></article>
+                    <article><img src="img/4.jpg"/></article>
+                    <p>Будь внимателен, даже если спишь</p>
+                    <p>Выгляди грозно, если настало время посещения врача</p>
+                    <p>Делай перерывы на сон во время домашних хлопот</p>
+                    <p>Сильно хочется и можно - иногда одно и то же</p>
+                </div>
+            </div>
         </div>
-        <div class="item">
-            <img src="img/2.jpg" alt="slider-2">
-            <div class="slideText">Будь внимателен, даже если спишь</div>
+        <div id="controls">
+            <label for="switch1"></label>
+            <label for="switch2"></label>
+            <label for="switch3"></label>
+            <label for="switch4"></label>
         </div>
-        <div class="item">
-            <img src="img/3.jpg" alt="slider-3">
-            <div class="slideText">Выгляди грозно, если настало время посещения врача</div>
+        <div id="active">
+            <label for="switch1"></label>
+            <label for="switch2"></label>
+            <label for="switch3"></label>
+            <label for="switch4"></label>
         </div>
-        <div class="item">
-            <img src="img/4.jpg" alt="slider-4">
-            <div class="slideText">Защищай младших от вещей, которые пугают тебя самого</div>
-        </div>
-        <div class="item">
-            <img src="img/5.jpg" alt="slider-5">
-            <div class="slideText">Не бойся показаться слабым</div>
-        </div>
-        <div class="item">
-            <img src="img/6.jpg" alt="slider-6">
-            <div class="slideText">Не забывай: помочь хозяйке с мытьём окон - в твоих силах</div>
-        </div>
-        <div class="item">
-            <img src="img/7.jpg" alt="slider-7">
-            <div class="slideText">Делай перерыв на сон во время домашних хлопот</div>
-        </div>
-        <div class="item">
-            <img src="img/8.jpg" alt="slider-8">
-            <div class="slideText">Внимательно следи за камерами и всегда будь неотразим</div>
-        </div>
-        <div class="item">
-            <img src="img/9.jpg" alt="slider-9">
-            <div class="slideText">Если тебя хотят обмануть - дай понять, что ты не лыком шит</div>
-        </div>
-        <div class="item">
-            <img src="img/10.jpg" alt="slider-10">
-            <div class="slideText">Когда есть повод для радости - отрывайся по полной</div>
-        </div>
-
-        <a class="next" onclick="nextSlide()">
-            &#10095;</a>
-    </div>
-        <div class="slider-dots">
-            <span class="slider-dots_item" onclick="currentSlide(1)"></span>
-            <span class="slider-dots_item" onclick="currentSlide(2)"></span>
-            <span class="slider-dots_item" onclick="currentSlide(3)"></span>
-            <span class="slider-dots_item" onclick="currentSlide(4)"></span>
-            <span class="slider-dots_item" onclick="currentSlide(5)"></span>
-            <span class="slider-dots_item" onclick="currentSlide(6)"></span>
-            <span class="slider-dots_item" onclick="currentSlide(7)"></span>
-            <span class="slider-dots_item" onclick="currentSlide(8)"></span>
-            <span class="slider-dots_item" onclick="currentSlide(9)"></span>
-            <span class="slider-dots_item" onclick="currentSlide(10)"></span>
-        </div>
-</main>
-<footer>
-    <div class="footer">
-        <span>© 2021</span>
-        <span>The Rolling Scopes School</span>
-        <span>SkaraBell</span>
-    </div>
-</footer>
+    </article>
+</div>
 </body>
-<script src="slider.js"></script>
 </html>
