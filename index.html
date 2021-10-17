@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MemSlider</title>
     <link rel="stylesheet" href="style.css">
 </head>
@@ -11,6 +12,9 @@
 </h1>
 <main>
     <div class="slider">
+        <a class="prev" onclick="prevSlide()">
+            &#10094;</a>
+
         <div class="item">
             <img src="img/1.jpg" alt="slider-1">
             <div class="slideText">ХАСКИ</div>
@@ -51,12 +55,10 @@
             <img src="img/10.jpg" alt="slider-10">
             <div class="slideText">ХАСКИ</div>
         </div>
+
+        <a class="next" onclick="nextSlide()">
+            &#10095;</a>
     </div>
-    <div class="slider-nav ">
-        <div class="slider-nav__numbering">
-            <span class="slider-nav__current-number">01</span>
-            <span class="numbering">|</span><span>05</span>
-        </div>
         <div class="slider-dots">
             <span class="slider-dots_item" onclick="currentSlide(1)"></span>
             <span class="slider-dots_item" onclick="currentSlide(2)"></span>
@@ -69,13 +71,6 @@
             <span class="slider-dots_item" onclick="currentSlide(9)"></span>
             <span class="slider-dots_item" onclick="currentSlide(10)"></span>
         </div>
-        <div class="slider-nav__switches">
-            <button class="prev" onclick="prevSlide()">
-            </button>
-            <button class="next" onclick="nextSlide()">
-            </button>
-        </div>
-    </div>
 </main>
 <footer>
     <div class="footer">

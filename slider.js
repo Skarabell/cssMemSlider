@@ -31,7 +31,4 @@ function showSlides(n) {
     }
     slides[slideIndex - 1].style.display = "block";
     dots[slideIndex - 1].className += " active";
-
-    document.getElementById("page").innerHTML = `0${slideIndex}`
-    document.getElementById("maxPage").innerHTML = `0${slides.length}`
 }
