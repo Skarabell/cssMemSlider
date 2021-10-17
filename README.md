@@ -1,1 +1,1 @@
-# cssMemSlider
+https://skarabell.github.io/cssMemSlider/
