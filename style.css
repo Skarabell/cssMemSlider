@@ -1,12 +1,20 @@
+* {
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+}
+
 h1 {
     color: white;
     text-align: center;
     font-size: 72px;
     font-family: "Segoe Script";
+    text-shadow: 1px 1px 1px #000, 0 0 1em #000;
 }
+
 body {
-    background-image: url("img/25255990.jpg");
+    background: gray url("img/25255990.jpg") center no-repeat;
 }
+
 /*==========SLIDER==========*/
 
 .slider {
@@ -15,8 +23,8 @@ body {
     position: relative;
     margin: auto;
     margin-bottom: 15px;
-}
 
+}
 
 .item img {
     object-fit: none;
@@ -25,15 +33,7 @@ body {
     border: none !important;
     box-shadow: none !important;
 }
-@media (max-width: 768px) {
-    body {
-        background-image: none;
-        background-color: gray;
-    }
-.slider {
-    min-width: 70%;
-}
-}
+
 /*==========NAVIGATION============*/
 
 .prev, .next {
@@ -45,42 +45,51 @@ body {
     padding: 16px;
     color: white;
     font-weight: bold;
-    font-size: 18px;
+    font-size: 28px;
     transition: 0.6s ease;
     border-radius: 0 3px 3px 0;
 }
+
 .next {
     right: 0;
     border-radius: 3px 0 0 3px;
 }
+
 .prev:hover,
 .next:hover {
     background-color: rgba(0, 0, 0, 0.8);
 }
+
 .slideText {
-    position: absolute;
+    margin: 0 0 0 50%;
+    padding: 70px 0 0 0;
+    width: 500px;
     color: #fff;
     font-size: 35px;
-    left: 50%;
-    top: 95%;
     transform: translate(-50%, -50%);
     text-shadow: 1px 1px 1px #000, 0 0 1em #000;
 }
+
 .slider-dots {
+    margin-top: 50px;
     text-align: center;
 }
-.slider-dots_item{
+
+.slider-dots_item {
     cursor: pointer;
-    height: 16px;
-    width: 16px;
+    height: 18px;
+    width: 18px;
     margin: 0 10px;
     background-color: #ddd;
     border-radius: 50%;
     display: inline-block;
     transition: background-color 0.6s ease;
 }
+
 .active,
 .slider-dots_item:hover {
+    height: 24px;
+    width: 24px;
     background-color: #aaa;
 }
 
@@ -90,6 +99,7 @@ body {
     animation-name: fade;
     animation-duration: 1.5s;
 }
+
 @-webkit-keyframes fade {
     from {
         opacity: .4
@@ -98,6 +108,7 @@ body {
         opacity: 1
     }
 }
+
 @keyframes fade {
     from {
         opacity: .4
@@ -107,18 +118,36 @@ body {
     }
 }
 
-
 /*=====FOOTER=========*/
 
 .footer {
     display: flex;
     justify-content: space-between;
     text-align: center;
-    margin-top: 50px;
+    margin: 50px 30px 0 30px;
     padding: 50px 0;
     font-weight: 200;
     font-size: 24px;
     color: white;
     letter-spacing: 2px;
     border-top: 3px solid #666666;
+}
+
+@media (max-width: 600px) {
+    body {
+        background-image: none;
+    }
+
+    h1 {
+        font-size: 48px;
+    }
+
+    .slider {
+        min-width: 500px;
+    }
+
+    .footer {
+        margin: 0 0 0 0;
+        padding: 0 0 0 0;
+    }
 }
